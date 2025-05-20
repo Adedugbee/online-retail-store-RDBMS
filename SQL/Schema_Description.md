@@ -14,7 +14,7 @@ Each product is uniquely identified by StockCode.
 3. TransactionsInvoice Table
 Records sales transactions (invoices).
 
-#### Relationship Overview
+#### **Relationship Overview
 One-to-many between Customers and TransactionsInvoice:
 A single customer (CustomerID) can have multiple transactions.
 

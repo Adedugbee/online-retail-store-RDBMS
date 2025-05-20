@@ -1,5 +1,5 @@
 # Schema Design and Relationships
-The three tables proposed for the schema design are Customers, Inventory, and TransactionsInvoice tables. are related in a way that supports a retail sales system:
+The three tables proposed for the schema design are Customers, Inventory, and TransactionsInvoice tables. These tables are related in a way that supports the retail sales system:
 
 1. Customers Table
 Stores customer details (e.g., name, contact, address).
@@ -14,15 +14,7 @@ Each product is uniquely identified by StockCode.
 3. TransactionsInvoice Table
 Records sales transactions (invoices).
 
-Each record links:
-
-A customer via CustomerID (foreign key to Customers).
-
-A product via StockCode (foreign key to Inventory).
-
-Stores quantity sold, price at time of sale, and the date of transaction.
-
-Relationship Overview
+#### Relationship Overview
 One-to-many between Customers and TransactionsInvoice:
 A single customer (CustomerID) can have multiple transactions.
 
